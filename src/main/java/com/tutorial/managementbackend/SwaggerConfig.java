@@ -23,8 +23,8 @@ public class SwaggerConfig {
     {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tutorial.managementbackend.controller"))
                 .paths(PathSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.tutorial.managementbackend.controller"))
                 .build();
     }
 }
